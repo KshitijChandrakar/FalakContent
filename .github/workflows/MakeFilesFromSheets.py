@@ -5,7 +5,7 @@ with open("results.json", "r") as results:
     # print(results)
     for i in results:
         path = f"{i["(B)"]}-{i["(C)"]}.md"
-        if not os.path.exists(path): #Somehow communicate to the author that the post exists
+        if not os.path.exists(path) and i["(G)"].lower() in ["true", "yes", "1"] : #Somehow communicate to the author that the post exists
             with open(path, "w") as file:
                 file.write("---")
                 file.write(f"title: '{i["(C)"]}'")
