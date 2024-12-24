@@ -23,9 +23,4 @@ jobs:
           #  the output of the action can be found in ${{ steps.update_worksheet.outputs.results }}
           RESULTS: ${{ steps.update_worksheet.outputs.results }}
         run: echo "$RESULTS" > results.json
-      - name: Upload results as artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: results-file
-          path: results.json
         
