@@ -1,1 +1,25 @@
-{"results":[{"command":{"func":"getData","kwargs":[{"range":"'Form responses 1'!A2:B3"},null]},"result":{"rawData":[["1","2"],["3","4"]],"formatted":[{"(A)":"1","(B)":"2"},{"(A)":"3","(B)":"4"}],"header":["(A)","(B)"],"range":"'Form responses 1'!A2:B3"}}]}
+{
+  "results": [{
+    "command": {
+      "func": "getData",
+      "kwargs": [{
+        "range": "'Form responses 1'!A2:B3"
+      }, null]
+    },
+    "result": {
+      "rawData": [
+        ["1", "2"],
+        ["3", "4"]
+      ],
+      "formatted": [{
+        "(A)": "1",
+        "(B)": "2"
+      }, {
+        "(A)": "3",
+        "(B)": "4"
+      }],
+      "header": ["(A)", "(B)"],
+      "range": "'Form responses 1'!A2:B3"
+    }
+  }]
+}
