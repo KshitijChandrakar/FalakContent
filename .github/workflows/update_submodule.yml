@@ -1,7 +1,10 @@
 name: Dispatch Update Submodule
 on: 
   push:
-  workflow_dispatch:
+workflow_dispatch:
+  workflow_run:
+    workflows: ['Sheets Get data and Create files']
+    types: [completed]
 jobs:
   dispatch:
     runs-on: ubuntu-latest
