@@ -1,4 +1,4 @@
-name: gsheet.action test
+name: Sheets Get data and Create files
 on: 
   workflow_dispatch:
     
