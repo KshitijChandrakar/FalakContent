@@ -13,7 +13,7 @@ jobs:
           spreadsheetId: ${{ secrets.BLOG_SUBMISSIONS_SPREADSHEET_ID }}
           commands: | # list of commands, specified as a valid JSON string
             [
-              { "command": "getData", "args": { "range": "'Form responses 1'!A2:G100" } }
+              { "command": "getData", "args": { "worksheetTitle":"Form responses 1", "minRow" : 2, "maxRow" : 102, "maxColumn" : 7 } }
             ]
         env:
           GSHEET_CLIENT_EMAIL: ${{ secrets.GSHEET_CLIENT_EMAIL }}
