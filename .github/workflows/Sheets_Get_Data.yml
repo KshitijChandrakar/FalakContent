@@ -1,7 +1,8 @@
 name: Sheets Get data and Create files
 on: 
   workflow_dispatch:
-    
+  schedule:
+  - cron: "0 0 * * 0"
 
 jobs:
   fetch:
