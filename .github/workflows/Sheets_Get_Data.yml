@@ -30,7 +30,7 @@ jobs:
         with:
           python-version: '3.12.2'
       - name: run python script
-        run: python ".github\workflows\MakeFilesFromSheets.py"
+        run: python ".github/workflows/MakeFilesFromSheets.py"
         
       - name: Commit changes
         run: |
