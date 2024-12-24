@@ -1,8 +1,5 @@
 name: Dispatch Update Submodule
-on:
-  push:
-    branches:
-      - master
+on: push
 jobs:
   dispatch:
     runs-on: ubuntu-latest
