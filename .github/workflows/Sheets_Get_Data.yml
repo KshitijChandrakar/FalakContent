@@ -32,9 +32,11 @@ jobs:
       - name: run python script
         run: | 
           python "MakeFilesFromSheets.py"
+      - name: commit and push to github
+        run: |
           git config --global user.email "no-reply@github.com"
           git config --global user.name "GitHub Actions"
-          git add results.json
+          git add -A
           git commit -m "Update results.json"
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git push
