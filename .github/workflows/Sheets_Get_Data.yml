@@ -30,10 +30,8 @@ jobs:
         with:
           python-version: '3.12.2'
       - name: run python script
-        run: python "MakeFilesFromSheets.py"
-        
-      - name: Commit changes
-        run: |
+        run: | 
+          python "MakeFilesFromSheets.py"
           git config --global user.email "no-reply@github.com"
           git config --global user.name "GitHub Actions"
           git add results.json
