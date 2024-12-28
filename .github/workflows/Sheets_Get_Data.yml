@@ -33,6 +33,8 @@ jobs:
       - name: run python script
         run: | 
           python "MakeFilesFromSheets.py"
+      - name: remove results for security
+        run: rm results.json
       - name: commit and push to github
         run: |
           git config --global user.email "no-reply@github.com"
