@@ -10,7 +10,8 @@ with open("results.json", "r") as results:
             with open(path, "w") as file:
                 file.write("---\n")
                 file.write(f"title: '{i["(C)"]}'\n")
-                file.write(f"date: '{i["(D)"]}'\n")
+                # This is commented because the date format is incorrect,  will fix that later
+                #file.write(f"date: '{i["(D)"]}'\n")
                 file.write(f"author: '{i["(B)"]}'\n")
                 file.write("---\n")
                 file.write(i["(E)"])
