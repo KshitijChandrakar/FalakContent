@@ -3,6 +3,9 @@ title: " "
 
 description: ""
 # 1. To ensure Netlify triggers a build on our exampleSite instance, we need to change a file in the exampleSite directory.
-cascade:
-  featured_image: 'banner2.png'
+featured_image: 'banner2.png'
 ---
+{{< About_Shortcode >}}
+{{< FAQ_Shortcode >}}
+{{< PastEvents_Shortcode >}}
+{{< RecentBlogPosts_Shortcode >}}
