@@ -3,7 +3,8 @@
 title: "Resources"
 description: "This is a compilation of different kinds of resources."
 featured_image: ''
-layout: resources
+cascade:
+  layout: resources
 ---
 
 

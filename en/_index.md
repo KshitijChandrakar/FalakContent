@@ -6,6 +6,10 @@ description: ""
 featured_image: 'banner2.png'
 ---
 {{< About_Shortcode >}}
+
 {{< FAQ_Shortcode >}}
+### Our Past Events:
 {{< PastEvents_Shortcode >}}
+
+### Recent Blog Reads:
 {{< RecentBlogPosts_Shortcode >}}
