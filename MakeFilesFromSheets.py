@@ -5,6 +5,8 @@ with open("results.json", "r") as results:
     # print(results)
     for i in results:
         path = f"en/blog/{i["(B)"].strip()} - {i["(C)"].strip()}.md"
+        if path == "en/blog/ - .md":
+            continue
         if not os.path.exists(path): #Somehow communicate to the author that the post exists
             print(f"yea it doesnt exist, going ahead with making file {path}")
             with open(path, "w") as file:
