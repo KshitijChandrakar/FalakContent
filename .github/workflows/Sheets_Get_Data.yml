@@ -1,49 +1,3 @@
-<<<<<<< HEAD
-name: Sheets Get data and Create files
-on: 
-  workflow_dispatch:
-    
-
-jobs:
-  fetch:
-    runs-on: ubuntu-latest
-    steps:
-      - id: 'update_worksheet'
-        uses: jroehl/gsheet.action@v2.0.0 # you can specify '@release' to always have the latest changes
-        with:
-          spreadsheetId: ${{ secrets.BLOG_SUBMISSIONS_SPREADSHEET_ID }}
-          commands: | # list of commands, specified as a valid JSON string
-            [
-              { "command": "getData", "args": { "worksheetTitle":"Form responses 1", "minRow" : 2, "maxRow" : 102, "minCol" : 1, "maxCol" : 7 } }
-            ]
-        env:
-          GSHEET_CLIENT_EMAIL: ${{ secrets.GSHEET_CLIENT_EMAIL }}
-          GSHEET_PRIVATE_KEY: ${{ secrets.GSHEET_PRIVATE_KEY }}
-      - name: Checkout repository
-        uses: actions/checkout@v3
-      - name: dump_results
-        env:
-          #  the output of the action can be found in ${{ steps.update_worksheet.outputs.results }}
-          RESULTS: ${{ steps.update_worksheet.outputs.results }}
-        run: echo "$RESULTS" > results.json
-      - name: Initialise Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12.2'
-      - name: run python script
-        run: | 
-          python "MakeFilesFromSheets.py"
-      - name: commit and push to github
-        run: |
-          git config --global user.email "no-reply@github.com"
-          git config --global user.name "GitHub Actions"
-          git add -A
-          git commit -m "Update results.json"
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
-          git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-=======
 name: Sheets Get data and Create files
 on: 
   workflow_dispatch:
@@ -90,4 +44,3 @@ jobs:
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
->>>>>>> 364ed00447a6704faa40218878e553dc79f1c232
