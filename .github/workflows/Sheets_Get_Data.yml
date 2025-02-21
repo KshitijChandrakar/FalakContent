@@ -30,7 +30,11 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12.2'
-          
+      - name: Pull Github
+        run: |
+          git config --global user.email "no-reply@github.com"
+          git config --global user.name "GitHub Actions"
+          git pull --rebase    
       - name: Run Python script
         run: | 
           python "MakeFilesFromSheets.py"
@@ -40,9 +44,6 @@ jobs:
           
       - name: Commit and push to GitHub
         run: |
-          git config --global user.email "no-reply@github.com"
-          git config --global user.name "GitHub Actions"
-          git pull --rebase
           git add -A
           git commit -am "Update results.json"
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
