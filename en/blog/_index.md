@@ -1,6 +1,6 @@
 ---
 title: "Blog"
-description: ""
+description: "Blogs"
 cascade:
   show_reading_time: true
 ---
