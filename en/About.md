@@ -1,7 +1,7 @@
 ---
 title: "About"
 description: ""
-featured_image: ''
+featured_image: 'about_banner_falak.jpg'
 layout: about
 ---
 Founded in 2023, Falak is an official student-run society under the School of Liberal Studies (SOLS) at UPES, Dehradun.
