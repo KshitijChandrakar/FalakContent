@@ -1,6 +1,6 @@
 ---
 title: "About"
-description: ""
+description: "About Section"
 featured_image: 'about_banner_falak.jpg'
 layout: about
 ---
