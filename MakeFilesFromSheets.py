@@ -4,7 +4,7 @@ with open("results.json", "r") as results:
     results = json.load(results)['results'][0]['result']['formatted']
     # print(results)
     for i in results:
-        path = f"en/blog/{i["(B)"]}-{i["(C)"]}.md"
+        path = f"en/blog/{i["(B)"].strip()} - {i["(C)"].strip()}.md"
         if not os.path.exists(path): #Somehow communicate to the author that the post exists
             print(f"yea it doesnt exist, going ahead with making file {path}")
             with open(path, "w") as file:
