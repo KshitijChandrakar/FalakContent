@@ -1,6 +1,6 @@
 ---
 title: "Drape in Diversity"
-featured_image: "drape_in_diversity.jpg"
+featured_image: ""
 header_image: "drape_in_diversity.jpg"
 ---
 
