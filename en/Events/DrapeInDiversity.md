@@ -10,3 +10,5 @@ Falak brought together students for a vibrant celebration of culture and heritag
 
 The event encouraged participants to express their roots, exchange personal narratives, and connect over the beauty of different cultural backgrounds. 
 From heartfelt notes about home to lively dance and music, Drape in Diversity was a joyous reminder of the rich tapestry that unites us all. 🎶✨
+
+[![Instagram Reel](drape_in_diversity_reel.jpg)](https://www.instagram.com/reel/Czd9NJMv3Nv/)
