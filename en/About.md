@@ -1,6 +1,6 @@
 ---
 title: "About"
-description: ""
+description: "Test"
 featured_image: ''
 layout: about
 ---
