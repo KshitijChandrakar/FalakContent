@@ -1,7 +1,7 @@
 ---
 title: "About"
 description: ""
-featured_image: ''
+featured_image: 'about_banner_falak.jpg'
 layout: about
 ---
 ## About Us
