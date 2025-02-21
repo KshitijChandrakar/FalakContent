@@ -1,7 +1,7 @@
 
 ---
 title: "Resources"
-description: "This is a compilation of different kinds of resources."
+description: "This is a compilation of different kinds of mental health, queer, and sex-ed resources to support your well-being"
 featured_image: ''
 cascade:
   layout: resources
