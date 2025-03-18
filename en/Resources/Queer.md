@@ -59,7 +59,7 @@ https://transgenderteensurvivalguide.com/
 
 https://genderkit.org.uk/
 
-https://www.reddit.com/r/MtF/comments/rjr83n/winters\_guide\_to\_staying\_sane\_in\_the\_closet\_as_a/
+<https://www.reddit.com/r/MtF/comments/rjr83n/winters\_guide\_to\_staying\_sane\_in\_the\_closet\_as_a/>
 
 #### Voice Training Guides:
 
