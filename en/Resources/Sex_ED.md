@@ -5,7 +5,9 @@ title: "SEX-ED"
 
 #### Sex-Ed : 
 
-https://www.scarleteen.com/ | Queer inclusive sex ed, and a message board to ask questions
+Queer inclusive sex ed, and a message board to ask questions
+
+https://www.scarleteen.com/
 
 Consent Basics:
 
